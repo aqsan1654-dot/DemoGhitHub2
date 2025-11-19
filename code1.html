@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(90deg, rgb(215, 143, 143), rgb(163, 163, 81), rgb(164, 219, 164),rgb(148, 189, 222));
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .glowing-text{
+              text-transform: uppercase;
+              font-size: 40px;
+              color: antiquewhite;
+              letter-spacing: 10px;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              white-space: nowrap;
+              overflow: hidden;
+              animation: glowing 3s linear infinite alternate;
+
+        }
+        @keyframes glowing {
+            0%{
+                scale: 1.5;
+                text-shadow: 1px 1px 10px rgb(86, 0, 0);
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glowing-text">aqsa naaz</h1>
+</body>
+</html>
