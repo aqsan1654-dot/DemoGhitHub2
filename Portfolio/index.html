@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        display: none;
+        justify-content:space-around;
+        background-color: rgba(0, 0, 0, 0.86);
+        color: whitesmoke;
+        padding: 10px;
+    }
+    .info{
+        display: flex;
+        gap: 10px;
+    }
+    .text1{
+        display: flex;
+        gap: 5px;
+    }
+    .text2{
+        display: flex;
+        gap: 5px;
+    }
+    .list{
+        display: flex;
+        gap: 10px;
+        list-style: none;
+    }
+    /* navbar */
+    nav{
+        display: flex;
+        justify-content: space-around;
+        padding:30px ;
+    }
+    .logo{
+        color: green;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 28px;
+    }
+    .list2{
+        display: none;
+        gap: 120px;
+        list-style-type: none;
+        font-size: 18px;
+        padding-top: 18px;
+    }
+    .list3{
+        display: none;
+        list-style-type: none;
+        gap: 10px;
+        padding-top: 18px;
+           
+    }
+    .bar i{
+        display: block;
+        padding-top: 18px;
+        
+    }
+
+    /* section 1 */
+
+    .sec1main{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 50px;
+        background-color: #deb2b2cf;
+    }
+    .sec1text {
+        text-align: start;
+        padding: 80px;
+        padding-top: 150px;
+        
+    }
+    .sec1text h1{
+        font-size: 44px;
+        padding: 10px;
+    }
+    .sec1text h2{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .sec1text p{
+        padding: 10px;
+        font-size: 24px;
+        width: 50   0px;
+    }
+    /* section 2 */
+    .sec2Main{
+        margin-bottom: 55px;
+    }
+    .sec2Text{
+        text-align: center;
+        padding: 50px;
+    }
+    .sec2Text h1{
+        font-size: 38px;
+        padding: 25px;
+    }
+    .sec2Text p{
+        font-size: 26px;
+        
+    }
+    .sec2circle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        
+    }
+    .sec2circle img{
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
+    .circle1{
+        text-align: center;
+        
+    }
+    .circle2{
+        text-align: center;
+    }
+    .circle3{
+        text-align: center;
+    }
+    .sec2circle h3{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .sec2circle button{
+        font-size: 16px;
+        padding: 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 20px;
+    }
+    .sec2circle button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+
+    }
+    /* section 3 */
+    .sec3Main{
+        text-align: center;
+        background-color: rgba(135, 207, 235, 0.3);
+        padding: 40px;
+    
+    }
+    .sec3Main p{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .sec3cards{
+        display: flex;
+        flex-direction: column;
+        padding-left:20px ;
+        padding-top: 40px;
+        width: 400px;
+        gap: 100px;
+    }
+    .sec3card1{
+        background-color: white;
+        height: 500px;
+    }
+    .sec3card2{
+         background-color: white;
+        height: 500px;
+    }
+       .sec3card3{
+         background-color: white;
+        height: 500px;
+    }
+    .sec3cards img{
+        width: 400px;
+        height: 300px;
+    }
+    .rating1{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .liststar{
+        display: flex;
+        list-style: none;
+        
+    }
+    .liststar1{
+        display: flex;
+        list-style: none;
+    }
+    .liststar2{
+        display: flex;
+        list-style: none;
+    }
+    .sec3card1 h2{
+        text-align: start;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 28px;
+        font-weight: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sec3card1 p{
+        text-align: start;
+    }
+     .sec3card2 h2{
+        text-align: start;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 28px;
+        font-weight: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sec3card2 p{
+        text-align: start;
+    }
+     .sec3card3 h2{
+        text-align: start;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 28px;
+        font-weight: normal;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sec3card3 p{
+        text-align: start;
+    }
+
+    footer{
+        background-color: black;
+       color: white;
+
+    }
+    .footer1{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+       padding-left: 90px;
+       /* background-color: black; */
+    }
+        .footicon{
+        display: flex;
+    }
+    .footicon2{
+        display: flex;
+    }
+    .footicon3{
+        display: flex;
+    }
+    .foot1div h1{
+        color: green;
+    }
+
+      footer h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .foot1div{}
+    .foot2div{
+        gap: 30px;
+    }
+    .foot3div{
+        list-style-type: none;
+    }
+    .footer2{
+        display: flex;
+        gap: 10px;
+        font-size: 30px;
+        background-color: black;
+        color: white;
+        padding-top: 30px;
+        padding-left: 90px;
+    }
+    button{
+        display: flex;
+        font-size: 20px;
+        background-color: green;
+        color: white;
+        display: flex;
+    }
+
+
+    @media only screen and (min-width:900px) {
+        .header{
+            display: flex;
+        }
+        .list2{
+            display: flex;
+        }
+        .list3{
+            display: flex;
+        }
+        .bar i{
+            display: none;
+        }
+        .sec1main{
+            flex-direction: row;
+        }
+        .sec2circle{
+            flex-direction: row;
+        }
+        .sec3cards{
+            flex-direction: row;
+        }
+
+    }
+</style>
+<body>
+    <!-- header -->
+     <header>
+    <div class="header">
+        <div class="info">
+        <div class="text1">
+            <i class="fa-solid fa-envelope"></i>
+            <p> info@company.com </p>
+        </div>
+        <div class="text2">
+            <i class="fa-solid fa-phone"></i>
+            <p>010-020-0340</p> </div>
+        </div>
+        <div class="icons">
+            <ul class="list">
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+        </div>
+     </div>
+    </header>
+    <!-- navbar -->
+     <nav>
+        <div class="logo">
+            <h1>Zay</h1>
+        </div>
+        <div class="icons2">
+            <ul class="list2">
+                <li>Home</li>
+                <li>About</li>
+                <li>Shop</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="icons3">
+            <ul class="list3">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+            </ul>
+
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+     </nav>
+     <!-- section 1 -->
+      <div class="sec1main">
+        <div class="sec1text">
+            <h1>Zay eCommerce</h1>
+            <h2>Tiny and Perfect eCommerce Template</h2>
+            <p>Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). This template is 100% free provided by TemplateMo website. Image credits go to Freepik Stories, Unsplash and Icons 8.</p>
+        </div>
+        <div class="sec1img">
+            <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/banner_img_01.jpg" width="500px" >
+        </div>
+      </div>
+      <!-- section 2 -->
+       <div class="sec2Main">
+            <div class="sec2Text">
+                <h1>Categories of The Month</h1>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="sec2circle">
+                <div class="circle1">
+                <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_01.jpg" width="300px">
+                <h3>Watches</h3>
+                <button>Go Shop</button>
+                </div>
+                <div class="circle2">
+                    <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_02.jpg" width="300px">
+                    <h3>Shoes</h3>
+                    <button>Go Shop</button>
+                    </div>
+                    <div class="circle3">
+                        <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/category_img_03.jpg" width="300px">
+                        <h3>Accessories</h3>
+                        <button>Go Shop</button>
+                        </div>
+            </div>
+        </div>
+        <!-- section 3 -->
+         <div class="sec3Main">
+            <h1>Featured Product</h1>
+            <p>Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <div class="sec3cards">
+                <div class="sec3card1">
+                    <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_01.jpg">
+                    <div class="rating1">
+                        <div class="star">
+                            <ul class="liststar">
+                                <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                <li style="color: yellow;"><i class="fa-solid fa-star"></i></li> 
+                                <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">$240.00</div>
+                            
+                    </div>
+                    <h2>Gym Weight</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.</p>
+                </div>
+                <div class="sec3card2">
+                    <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_02.jpg">
+                    <div class="rating1">
+                        <div class="star">
+                            <ul class="liststar1">
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                 <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">$480.00</div>
+                            
+                    </div>
+                    <h2>Cloud Nike Shoes</h2>
+                    <p>Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.</p>
+                </div>
+                <div class="sec3card3">
+                    <img src="https://templatemo.com/templates/templatemo_559_zay_shop/assets/img/feature_prod_03.jpg">
+                    <div class="rating1">
+                        <div class="star">
+                            <ul class="liststar2">
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                                  <li style="color: yellow;"><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price">$360.00</div>
+                            
+                    </div>
+                    <h2>Summer Addides Shoes</h2>
+                    <p>Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.</p>
+                </div>
+            </div>
+         </div>
+         <!-- footer -->
+        <footer>
+            <div class="footer1">
+                <div class="foot1div">
+                    <h1>Zay Shop</h1>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p> 123 Consectetur at ligula 10660</p>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <p>010-020-0340</p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p> info@company.com</p>
+                </div>
+                <div class="foot2div">
+                    <h1>Product</h1>
+                    <p>Luxury</p>
+                    <p>Sport Wear</p>
+                    <p>Men's Shoes</p>
+                    <p>Women's Shoes</p>
+                    <p>Popular Dress</p>
+                    <p>Gym Accessories</p>
+                    <p>Sport Shoes</p>
+                </div>
+                <div class="foot3div">
+                    <h1>Further Info</h1>
+                    <ul class="list2">
+                         <li>Home</li>
+                     <li>About us</li>
+                      <li>Shop Location</li>
+                       <li>FAQs</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="footer2">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <button>subscribe</button>
+        </footer>     
+</body>
+</html>
